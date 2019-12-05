@@ -5,8 +5,24 @@
 ## Basic descriptive works
 
 ### Why is GeoServer an important factor in a GIS stack?
+GeoServer is an essential factor to a GIS stack. From my understanding (after running a local environment, and working on a few tasks) is that it is an open-source server for geospatial data. I think it's best put by the WikiPedia entry for GeoServer:
+
+```
+Just as the Apache HTTP Server has offered a free and open web server to publish HTML, GeoServer aims to do the same for geospatial data.
+```
+
+Open-source platforms are important because they allow for developers around the globe to build powerful software that we depend on, without even knowing it.
+
+In a GIS (Geographic Information System) stack, GeoServer facilitates the hosted storage, sharing, processing, and editing of geospatial data. It's like a backbone for the complete stack, as a means of connecting together information and tools to operate in unison.
 
 ### What is Docker and why should it be used to containerize GeoServer?
+Docker is a tool that allows for operating system level virtualization via containers. Containers let developers ship complete applications in single, simply installable packages. It's fantastic not only for ease of development, but also for scaling, security, and a host of other benefits.
+
+Docker is fantastic to containerize GeoServer, since it allows for:
+* Ease in setup so anyone, anywhere can quickly spin up their own development environment via a basic DOCKERFILE.
+* Isolation so that existing processes running on a machine/server are not hindered by GeoServer (except I/O of course).
+* Ease of development, so that any open-source developer can get setup with a uniform development environment that is the same across Operating Systems and devices.
+* Security, scaleability via swarm, and more.
 
 ## Process (documentation)
 1. To begin, I built GeoServer + Docker myself via the build script (according to the [kartoza docker-geoserver dockerfile](git://github.com/kartoza/docker-geoserver))
